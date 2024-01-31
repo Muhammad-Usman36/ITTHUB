@@ -156,7 +156,7 @@ export function Button(props: ButtonProps) {
 
 const $baseViewStyle: ViewStyle = {
   minHeight: 56,
-  borderRadius: 4,
+  borderRadius: 5,
   justifyContent: "center",
   alignItems: "center",
   flexDirection: "row",
@@ -183,8 +183,8 @@ const $viewPresets = {
     $baseViewStyle,
     {
       borderWidth: 1,
-      borderColor: colors.palette.neutral400,
-      backgroundColor: colors.palette.neutral100,
+      borderColor: colors.palette.secondary500,
+      backgroundColor: colors.palette.secondary500,
     },
   ] as StyleProp<ViewStyle>,
 

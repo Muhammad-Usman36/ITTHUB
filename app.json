@@ -21,14 +21,14 @@
       "**/*"
     ],
     "android": {
-      "icon": "./assets/images/app-icon-android-legacy.png",
+      "icon": "./assets/images/Jlogo.png",
       "package": "com.itthub",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/app-icon-android-adaptive-foreground.png",
-        "backgroundImage": "./assets/images/app-icon-android-adaptive-background.png"
+        "foregroundImage": "./assets/images/Jlogo.png",
+        "backgroundImage": "./assets/images/splash.png"
       },
       "splash": {
-        "image": "./assets/images/splash-logo-android-universal.png",
+        "image": "./assets/images/splash.png",
         "resizeMode": "contain",
         "backgroundColor": "#191015"
       }
