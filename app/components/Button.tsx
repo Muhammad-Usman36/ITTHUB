@@ -168,6 +168,7 @@ const $baseViewStyle: ViewStyle = {
 const $baseTextStyle: TextStyle = {
   fontSize: 16,
   lineHeight: 20,
+  color:colors.palette.neutral100,
   fontFamily: typography.primary.medium,
   textAlign: "center",
   flexShrink: 1,
@@ -183,8 +184,8 @@ const $viewPresets = {
     $baseViewStyle,
     {
       borderWidth: 1,
-      borderColor: colors.palette.secondary500,
-      backgroundColor: colors.palette.secondary500,
+      borderColor: colors.palette.primary800,
+      backgroundColor: colors.palette.primary700,
     },
   ] as StyleProp<ViewStyle>,
 

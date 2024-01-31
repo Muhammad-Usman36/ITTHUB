@@ -2,14 +2,16 @@ import React from "react"
 import {Image, ImageStyle, TextStyle, View, ViewStyle,Alert, TouchableOpacity } from "react-native"
 import { Text,Button,Icon,TextField} from "app/components"
 import { colors, spacing } from "../theme"
+import { goBack } from "app/navigators";
 
 
 
 
-const welcomeLogo = require("../../assets/images/Jlogo.png")
+
+const welcomeLogo = require("../../assets/images/2.png")
 
 
-export const F=(props) => {
+export const S=(props) => {
   
   return (
     <View style={$container}>
@@ -20,20 +22,27 @@ export const F=(props) => {
         <Text style={{color:colors.theam,textAlign: 'right', margin: 20,fontWeight:'bold'}}>Skip</Text>
         </TouchableOpacity>
 
+        <Image style={$welcomeLogo} source={welcomeLogo}  width={20} resizeMode="contain" />
 
-      <Image style={$welcomeLogo} source={welcomeLogo}  width={20} resizeMode="contain" />
 
 
-        <Text style={{alignSelf: 'center', fontWeight:"bold",fontSize: 20,marginBottom:10, color:colors.theam}}>Welcome to ITTHUB</Text>
+        <Text style={{alignSelf: 'center', fontWeight:"bold",fontSize: 20,marginBottom:10, color:colors.theam}}>Choose Your Course</Text>
 
-       <Text style={{alignItems: 'center',marginHorizontal: 35}}>Welcome as you learn a world changing skill to get better job. </Text>
+       <Text style={{alignItems: 'center',marginHorizontal: 20}}>Choose the course of your choice and gain industry knowledge and experience in it.</Text>
         
+<View style={{flexDirection: 'row', marginTop: 100,marginLeft: 50}}>
+<TouchableOpacity onPress={()=>goBack('F')}>
 
-       <Button
+<Text style={{marginTop: 13, fontWeight: 'bold',color:colors.theam}}>Back</Text>
+</TouchableOpacity>
+<Button
 text="Next"
 style={$icon}
-onPress={()=>props.navigation.navigate('S')}
+onPress={()=>props.navigation.navigate('T')}
+
 />
+</View>
+
 
       </View>
     </View>
@@ -47,10 +56,11 @@ const $container: ViewStyle = {
 const $icon: ViewStyle = {
  height:50,
  width:120,
- marginTop: 90,
- marginLeft: 190,
- color:'white'
-}
+ marginLeft:100
+,}
+
+
+
 const $topContainer: ViewStyle = {
   flexShrink: 1,
   flexGrow: 1,
