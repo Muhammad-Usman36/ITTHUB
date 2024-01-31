@@ -11,7 +11,7 @@ import { goBack } from "app/navigators";
 const welcomeLogo = require("../../assets/images/3.png")
 
 
-export const T=() => {
+export const T=(props) => {
   
   return (
     <View style={$container}>
@@ -35,6 +35,7 @@ export const T=() => {
 <Button
 text="Get Startrd"
 style={$icon}
+onPress={()=>props.navigation.navigate('SingUp')}
 
 />
 </View>

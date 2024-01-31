@@ -22,6 +22,10 @@ import { F } from "app/screens/F"
 import { S } from "app/screens/S"
 import { T } from "app/screens/T"
 import { SingUp } from "app/screens/SignUp"
+import { Login } from "app/screens/Login"
+import { FogP } from "app/screens/FogP"
+import { RP } from "app/screens/RP"
+import { PRS } from "app/screens/PRS"
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -62,12 +66,18 @@ const AppStack = observer(function AppStack() {
       screenOptions={{ headerShown: false, navigationBarColor: colors.background }}
     >
           {/**<Stack.Screen name="Welcome" component={Screens.WelcomeScreen} />
-          <Stack.Screen name="Hello" component={Hello}/>*/}
-          <Stack.Screen name="SingUp" component={SingUp}/>
-          {/**<Stack.Screen name="F" component={F}/>
+          <Stack.Screen name="Hello" component={Hello}/>
+          */}
+          
+          <Stack.Screen name="F" component={F}/>
           <Stack.Screen name="S" component={S}/>
           <Stack.Screen name="T" component={T}/>
-       🔥 Your screens go here */}
+          <Stack.Screen name="SingUp" component={SingUp}/>
+          <Stack.Screen name="Login" component={Login}/>
+          <Stack.Screen name="FogP" component={FogP}/>
+          <Stack.Screen name="RP" component={RP}/>
+          <Stack.Screen name="PRS" component={PRS}/>
+      {/** 🔥 Your screens go here */}
       {/* IGNITE_GENERATOR_ANCHOR_APP_STACK_SCREENS */}
     </Stack.Navigator>
   )

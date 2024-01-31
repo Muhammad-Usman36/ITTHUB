@@ -15,7 +15,7 @@ export const F=(props) => {
     <View style={$container}>
 
       <View style={$topContainer}>
-      <TouchableOpacity onPress={()=>props.navigation.navigate('Singup')}>
+      <TouchableOpacity onPress={()=>props.navigation.navigate('SingUp')}>
 
         <Text style={{color:colors.theam,textAlign: 'right', margin: 20,fontWeight:'bold'}}>Skip</Text>
         </TouchableOpacity>
