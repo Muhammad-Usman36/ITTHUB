@@ -4,6 +4,7 @@ import { Text,Button,Icon,TextField} from "app/components"
 import {CommonActions, goBack,NavigationActions } from "../navigators"
 import { colors, spacing } from "../theme"
 import {  } from "../utils/useSafeAreaInsetsStyle"
+import { Login } from "./Login"
 //<Image style={$welcomeFace} source={welcomeFace} resizeMode="contain" />
 
 
@@ -12,11 +13,13 @@ import {  } from "../utils/useSafeAreaInsetsStyle"
 
 
 
-export const PRS=(navigation:any)=> {
+export const PRS=(props:any)=> {
 
   const handleSubmit = (values) => {
     console.log(values);
   Alert.alert('System is not created yet');
+  props.navigation.navigate("Login", { screen: "Login", params: {} });
+
   };
   return (
     <View style={$container}>

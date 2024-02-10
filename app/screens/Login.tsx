@@ -5,6 +5,7 @@ import { colors, spacing } from "../theme"
 import { Formik } from "formik";
 import * as yup from "yup";
 import { goBack } from "app/navigators";
+import TB from "./TB";
 
 
 const validationSchema = yup.object().shape({
@@ -16,12 +17,14 @@ const validationSchema = yup.object().shape({
 const welcomeLogo = require("../../assets/images/Jlogo.png")
 
 
-export const Login=(props)=> {
+export const Login=(props:any)=> {
 
 
   const handleSubmit = (values) => {
     console.log(values);
   Alert.alert('System setup is not build Yet');
+  props.navigation.navigate("TB");
+
   };
   return (
     <View style={$container}>

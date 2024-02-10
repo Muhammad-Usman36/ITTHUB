@@ -26,6 +26,9 @@ import { Login } from "app/screens/Login"
 import { FogP } from "app/screens/FogP"
 import { RP } from "app/screens/RP"
 import { PRS } from "app/screens/PRS"
+import TB from "app/screens/TB"
+import Home from "app/screens/Home"
+import Courses from "app/screens/Courses"
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -67,7 +70,7 @@ const AppStack = observer(function AppStack() {
     >
           {/**<Stack.Screen name="Welcome" component={Screens.WelcomeScreen} />
           <Stack.Screen name="Hello" component={Hello}/>
-          */}
+          
           
           <Stack.Screen name="F" component={F}/>
           <Stack.Screen name="S" component={S}/>
@@ -77,10 +80,14 @@ const AppStack = observer(function AppStack() {
           <Stack.Screen name="FogP" component={FogP}/>
           <Stack.Screen name="RP" component={RP}/>
           <Stack.Screen name="PRS" component={PRS}/>
-      {/** 🔥 Your screens go here */}
+          <Stack.Screen name="TB" component={TB}/>*/}
+          <Stack.Screen name="Home" component={Home}/>
+         {/** <Stack.Screen name="Courses" component={Courses}/>
+          
+       🔥 Your screens go here */}
       {/* IGNITE_GENERATOR_ANCHOR_APP_STACK_SCREENS */}
     </Stack.Navigator>
-  )
+  ) 
 })
 
 export interface NavigationProps

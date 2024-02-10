@@ -69,6 +69,6 @@ const $topContainer: ViewStyle = {
 const $welcomeLogo: ImageStyle = {
   height: 190,
   width: "100%",
-  marginVertical: spacing.xxxl,
+  marginVertical: spacing.xl,
   marginBottom:90,
 }
